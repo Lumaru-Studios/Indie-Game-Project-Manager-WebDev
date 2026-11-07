@@ -10,23 +10,45 @@
 
     <title>IGPM - Dashboard</title>
 </head>
-<header>
-    <nav class="navigation">
-        <div class="logo">
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
             <img src="IGPM_Logo.ico" alt="IGPM Logo" class="logo-image" id="logoIcon">
             <span class="logo-text">IGPM</span>
         </div>
-        <div id="logoModal" class="logo-modal">
-            <img src="IGPM_Logo.ico" alt="IGPM Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="team.html">Team</a></li>
-        </ul>
-    </nav>
-</header>
-<body>
-    <h1>Dashboard</h1>
-    <p>This is the dashboard from our web application.</p>
+        <div class="nav-label">WORKSPACE</div>
+        <nav aria-label="Main navigation">
+            <ul class="sidebar-links">
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div id="logoModal" class="logo-modal">
+        <img src="IGPM_Logo.ico" alt="IGPM Logo">
+    </div>
+
+    <main class="content">
+        <header class="topbar">
+            <button class="mobile-menu" id="menuToggle" aria-label="Toggle navigation">☰</button>
+            <div class="breadcrumbs">Workspace <span>/</span> <strong>Dashboard</strong></div>
+            <div class="topbar-actions">
+                <span class="date-label" id="today"></span>
+                <button class="icon-button" aria-label="Notifications">🔔<i class="notification-dot"></i></button>
+                <div class="profile">
+                    <div class="avatar">U</div>
+                    <div class="profile-name">
+                        <strong>User</strong>
+                        <span>Administrator</span>
+                    </div>
+                    <span class="chevron">⌄</span>
+                </div>
+            </div>
+        </header>
+        <h1>Dashboard</h1>
+        <p>This is the dashboard from our web application.</p>
+    </main>
 </body>
 </html>

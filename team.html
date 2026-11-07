@@ -8,48 +8,60 @@
     <script src="script.js" defer></script>
     <title>Team</title>
 </head>
-<header>
-    <nav class="navigation">
-        <div class="logo">
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
             <img src="IGPM_Logo.ico" alt="IGPM Logo" class="logo-image" id="logoIcon">
             <span class="logo-text">IGPM</span>
         </div>
-        <div id="logoModal" class="logo-modal">
-            <img src="IGPM_Logo.ico" alt="IGPM Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="team.html" class="active">Team</a></li>
-        </ul>
-    </nav>
-</header>
-<body>
-    <h1>Our Team</h1>
-    <h3>SpionJam</h3>
-    <ul>
-        <li>Head</li>
-        <li>Lead Developer</li>
-        <li>Designer</li>
-        <li>Community Manager</li>
-    </ul>
+        <div class="nav-label">WORKSPACE</div>
+        <nav aria-label="Main navigation">
+            <ul class="sidebar-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <h3>HDJulian145</h3>
-    <ul>
-        <li>Developer</li>
-        <li>Storyteller</li>
-        <li>Tooltip-Guy</li>
-    </ul>
+    <div id="logoModal" class="logo-modal">
+        <img src="IGPM_Logo.ico" alt="IGPM Logo">
+    </div>
 
-    <h3>Apocalypto_Torte</h3>
-    <ul>
-        <li>Designer</li>
-        <li>Developer</li>
-        <li>Tooltip-Guy</li>
-    </ul>
-
-    <h3>JokeStar</h3>
-    <ul>
-        <li>Developer</li>
-    </ul>
+    <main class="team-page">
+        <h1>Our Team</h1>
+        <section class="team-grid" aria-label="Team members">
+            <article class="member-card">
+                <h2>SpionJam</h2>
+                <ul>
+                    <li>Head</li>
+                    <li>Lead Developer</li>
+                    <li>Designer</li>
+                    <li>Community Manager</li>
+                </ul>
+            </article>
+            <article class="member-card">
+                <h2>HDJulian145</h2>
+                <ul>
+                    <li>Developer</li>
+                    <li>Storyteller</li>
+                    <li>Tooltip-Guy</li>
+                </ul>
+            </article>
+            <article class="member-card">
+                <h2>Apocalypto_Torte</h2>
+                <ul>
+                    <li>Designer</li>
+                    <li>Developer</li>
+                    <li>Tooltip-Guy</li>
+                </ul>
+            </article>
+            <article class="member-card">
+                <h2>JokeStar</h2>
+                <ul>
+                    <li>Developer</li>
+                </ul>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
