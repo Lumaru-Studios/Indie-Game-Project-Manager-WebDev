@@ -23,6 +23,15 @@ body {
     color: var(--color-text);
 }
 
+[data-include]:not(.include-ready) {
+    visibility: hidden;
+}
+
+.include-error {
+    margin: 24px;
+    color: var(--color-text);
+}
+
 
 /* Sidebar */
 
@@ -96,8 +105,19 @@ body {
     min-height: 100dvh;
 }
 
-.content > h1 {
-    margin: 36px clamp(24px, 4vw, 48px) 12px;
+.page-content {
+    padding: clamp(24px, 4vw, 48px);
+}
+
+.page-panel,
+.team-page {
+    max-width: 1200px;
+    margin: 0;
+}
+
+.page-panel > h1,
+.team-page > h1 {
+    margin: 0 0 24px;
 }
 
 .content > p {
@@ -338,12 +358,6 @@ body {
 }
 
 /* Team */
-
-.team-page {
-    max-width: calc(1100px + var(--sidebar-width));
-    margin: 0 0 0 var(--sidebar-width);
-    padding: clamp(24px, 4vw, 48px);
-}
 
 .team-grid {
     display: grid;
